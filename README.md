@@ -215,10 +215,6 @@ mysql -h <RDS-ENDPOINT> -u admin -p
 
 * Fixar versões de imagens e pacotes.
 * Usar RDS Multi-AZ, backups, escalabilidade.
-* Usar S3 + CloudFront para mídia.
-* Implementar cache (Redis/Memcached).
-* Usar Route53, WAF, IAM com roles adequadas.
-* Monitoramento com CloudWatch, alarms e dashboards.
 
 ---
 
