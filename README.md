@@ -1,8 +1,6 @@
 # WordPress em Alta Disponibilidade na AWS
 
-> Repositório de referência para um ambiente didático de WordPress escalável e tolerante a falhas usando **Docker**, **EFS**, **RDS**, **Auto Scaling Group (ASG)** e **Application Load Balancer (ALB)** na AWS.
-
----
+![Image](https://github.com/user-attachments/assets/6cd13a6b-efb8-41fe-82cf-6082621750f5)
 
 ## 📌 Resumo do projeto
 
@@ -192,12 +190,14 @@ mysql -h <RDS-ENDPOINT> -u admin -p
 
 * **502 Bad Gateway no ALB:** targets `unhealthy`, SG errado, container não iniciado, conflito.
 * **docker-compose não encontrado:** use `/usr/local/bin/docker-compose` ou instale plugin oficial `docker-compose-plugin` e rode `docker compose`.
-* **403 Forbidden com página "It works!":** Apache instalado; desative como acima e reinicie os containers.
 * **Problemas de permissão no EFS:** use `sudo chown -R 1000:1000 /mnt/efs/wordpress`.
 * **Erro no RDS:** revise SGs (`SG-EC2` → `SG-RDS`), credenciais e endpoint.
 * **Health Check ALB falhando:** ajuste caminho para `/` ou crie `healthcheck.php` retornando `200 OK`.
 
 ---
+
+## Tela do Projeto funcionando
+<img width="1917" height="1077" alt="Image" src="https://github.com/user-attachments/assets/62114b11-e42e-44ae-b057-025d54155ebe" />
 
 ## 🧹 Limpeza de recursos (evitar cobranças)
 
