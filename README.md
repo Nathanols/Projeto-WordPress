@@ -12,7 +12,6 @@ Este projeto demonstra como provisionar uma arquitetura de WordPress pronta para
 ## 🏗️ Arquitetura (visão geral)
 
 ```mermaid
-flowchart LR
   Internet --> ALB[ALB (public subnets)]
   ALB --> TG[Target Group]
   TG --> ASG[Auto Scaling Group]
