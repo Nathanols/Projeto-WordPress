@@ -124,7 +124,7 @@ services:
    * Instance type: `t3.micro` (ou `t3.small` conforme necessidade)
    * Associate SG: `SG-EC2`
    * Disable Auto-assign public IPv4 (instâncias ficam em privates)
-   * User data: cole o `user-data.sh` completo
+   * User data: 
 10. **Criar Target Group (ALB)**:
 
     * Target type: instance (ou ip se preferir)
